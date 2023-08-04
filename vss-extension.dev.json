@@ -1,0 +1,105 @@
+{
+    "manifestVersion": 1,
+    "id": "tfsecurity-official",
+    "publisher": "KhulnaSoftDevOps",
+    "version": "VERSION_PLACEHOLDER",
+    "name": "tfsecurity",
+    "description": "tfsecurity uses static analysis of your terraform code to spot potential misconfigurations and help you to resolve them.",
+    "repository": {
+      "type": "git",
+      "uri": "https://github.com/khulnasoft-labs/tfsecurity-azure-pipelines-task"
+    },
+    "public": true,
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "tags": [
+        "tfsecurity",
+        "terraform",
+        "security",
+        "scanner"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"        
+    },
+    "files": [
+        {
+            "path": "tfsecurity-task"
+        },
+        {
+            "path": "ui/node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        },
+        {
+            "path": "LICENSE",
+            "addressable": true
+        },
+        {
+            "path": "ui/build/static",
+            "addressable": true,
+            "packagePath": "static"
+        },
+        {
+            "path": "ui/build/index.html",
+            "addressable": true,
+            "packagePath": "index.html"
+        },
+        {
+            "path": "screenshot.png",
+            "addressable": true
+        },
+        {
+            "path": "images/tfsecurity.png",
+            "addressable": true,
+            "packagePath": "images/tfsecurity.png"
+        }
+    ],
+    "content": {
+        "license": {
+            "path": "LICENSE"
+        },
+        "details": {
+            "path": "marketplace.md"
+        }
+    },
+    "links": {
+        "home": {
+            "uri": "https://khulnasoft.com/"
+        },
+        "license": {
+            "uri": "./LICENSE"
+        }
+    },
+    "contributions": [
+        {
+            "id": "custom-build-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "tfsecurity-task"
+            }
+        },
+        {
+            "id": "tfsecurity-tab",
+            "type": "ms.vss-build-web.build-results-tab",
+            "description": "Results for tfsecurity scan",
+            "targets": ["ms.vss-build-web.build-results-view"],
+            "properties": {
+                "name": "tfsecurity",
+                "uri": "index.html",
+                "supportsTasks": ["c4d1b8a0-2ef3-4ed7-86ae-a83946199e82"]
+            }
+        }
+    ],
+    "scopes": [
+        "vso.build_execute"
+    ]
+}

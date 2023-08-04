@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "tfsecurity-official",
-    "publisher": "KhulnaSoftDevOps",
+    "publisher": "KhulnaSoft",
     "version": "VERSION_PLACEHOLDER",
     "name": "tfsecurity",
     "description": "tfsecurity uses static analysis of your terraform code to spot potential misconfigurations and help you to resolve them.",

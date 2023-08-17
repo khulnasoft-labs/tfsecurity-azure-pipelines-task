@@ -80,7 +80,7 @@ async function getArtifactURL(): Promise<string> {
     let arch: string = os.arch() == "x64" ? "amd64" : "386";
     let extension: string = os.platform() == "win32" ? ".exe" : "";
     let artifact: string = util.format("tfsecurity-%s-%s%s", platform, arch, extension);
-    return util.format("https://github.com/khulnasoft-labs/tfsecurity/releases/download/%s/%s", version as string, artifact);
+    return util.format("https://github.com/khulnasoft-lab/tfsecurity/releases/download/%s/%s", version as string, artifact);
 }
 
 run();

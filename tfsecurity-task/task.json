@@ -4,7 +4,7 @@
     "name": "tfsecurity",
     "friendlyName": "tfsecurity: Secure your Terraform",
     "description": "tfsecurity uses static analysis of your terraform code to spot potential misconfigurations and help you to resolve them.",
-    "helpMarkDown": "[Learn more about this task](https://github.com/khulnasoft-labs/tfsecurity-azure-pipelines-task)",
+    "helpMarkDown": "[Learn more about this task](https://github.com/khulnasoft-lab/tfsecurity-azure-pipelines-task)",
     "category": "Test",
     "author": "KhulnaSoft Security",
     "version": { VERSION_PLACEHOLDER },

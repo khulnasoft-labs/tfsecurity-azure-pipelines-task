@@ -7,7 +7,7 @@
     "description": "tfsecurity uses static analysis of your terraform code to spot potential misconfigurations and help you to resolve them.",
     "repository": {
       "type": "git",
-      "uri": "https://github.com/khulnasoft-labs/tfsecurity-azure-pipelines-task"
+      "uri": "https://github.com/khulnasoft-lab/tfsecurity-azure-pipelines-task"
     },
     "public": true,
     "categories": [
